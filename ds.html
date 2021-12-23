@@ -1,0 +1,235 @@
+Data Structure in Java – A Complete Guide for Linear & Non-Linear Data Structures
+Sorting through the endless choice of mobile phones based on price or searching a particular book from millions of books on Flipkart, are all done with less complex and low-cost algorithms, which work on structured data.
+
+Since data structure is a core to any programming language and choosing a particular data structure majorly affects both the performance and functionality of Java applications, therefore it’s worth an effort to learn different data structures available in Java.
+
+Today this article will guide you towards each type of Data Structures supported by Java with examples and syntax, along with their implementation and usage in Java.
+
+Firstly, let’s get familiar with the Top 12 Java Applications with Techvidvan.
+
+What is a Data Structure in Java?
+The term data structure refers to a data collection with well-defined operations and behavior or properties. A data structure is a unique way of storing or organizing the data in computer memory so that we can use it effectively.
+
+We use Data Structures primarily in almost every field of Computer Science, which is Computer Graphics, Operating systems, Artificial Intelligence, Compiler Design, and many more.
+
+The need for Data Structures in Java
+
+
+
+As the amount of data grows rapidly, applications get more complex, and there may arise the following problems:
+
+Processing Speed: As the data is increasing day by day, high-speed processing is required to handle this massive amount of data, but the processor may fail to deal with that much amount of data.
+Searching data: Consider an inventory with a size of 200 items. If your application needs to search for a particular item, it needs to traverse 200 items in every search. This results in slowing down the search process.
+Multiple requests at the same time: Suppose, millions of users are simultaneously searching the data on a web server, then there is a chance of server failure.
+In order to solve the above problems, we use data structures. Data structure stores and manages the data in such a way that the required data can be searched instantly.
+
+Advantages of Java Data Structures
+Efficiency: Data Structures are used to increase the efficiency and performance of an application by organizing the data in such a manner that it requires less space with higher processing speed.
+Reusability: Data structures provide reusability of data, that is after implementing a particular data structure once, we can use it many times at any other place. We can compile the implementation of these data structures into libraries and the clients can use these libraries in many ways.
+Abstraction: In Java, the ADT (Abstract Data Types) is used to specify a data structure. The ADT provides a level of abstraction. The client program uses the data structure with the help of the interface only, without having knowledge of the implementation details.
+Data Structure Classification in Java
+data structure classification
+
+Linear Data Structures: In a linear data structure all the elements are arranged in the linear or sequential order. The linear data structure is a single level data structure.
+Non-Linear Data Structures: The non-linear data structure does not arrange the data in a sequential manner as in linear data structures. Non-linear data structures are the multilevel data structure.
+
+Linear and Non-Linear Data Structure in Java
+Types of Data Structure in Java
+There are some common types of data structure in Java they are as follows –
+
+Arrays
+Linked Lists
+Stack
+Queue
+Graph
+Set
+1. Arrays
+
+An Array, which is the simplest data structure, is a collection of elements of the same type that are referenced by a common name. Arrays consist of contiguous memory locations. The first address of the array belongs to the first element and the last address to the last element of the array.
+
+Some points about arrays:
+
+Arrays can have data items of simple and similar types such as int or float, or even user-defined datatypes like structures and objects.
+The common data type of array elements is known as the base type of the array.
+Arrays are considered as objects in Java.
+The indexing of the variable in an array starts from 0.
+We must define an array before we can use it to store information.
+The storage of arrays in Java is in the form of dynamic allocation in the heap area.
+We can find the length of arrays using the member ‘length’.
+The size of an array must be an int value.
+Arrays can be of 3 types:
+
+Single Dimensional Arrays
+Two-dimensional Arrays
+Multi-dimensional arrays
+The below diagram shows the illustration of one-dimensional arrays.
+
+Array data structure in Java
+
+Note:
+We can use an array only when we predetermine the number of elements along with its size since the memory is preserved before processing. For this reason, arrays come under the category of static data structures.
+
+
+Time complexities for array operations:
+
+Accessing elements: O(1)
+Searching:
+For Sequential Search: O(n)
+For Binary Search [If Array is sorted]:O(log n)
+Insertion: O(n)
+Deletion: O(n)
+Dive a little deep into the concepts of Java Arrays to learn more in detail.
+
+2. Linked Lists
+The Linked Lists in Java is another important type of data structure. A Linked List is a collection of similar types of data elements, called nodes, which point to the next following nodes by means of pointers.
+
+Need for Linked lists:
+
+Linked lists overcome the drawbacks of arrays because in linked lists there is no need to define the number of elements before using it, therefore the allocation or deallocation of memory can be during the processing according to the requirement, making the insertions and deletions much easier and simpler.
+
+Types of Linked lists:
+
+Types of Linked List in Java
+
+Let’s start discussing each of these types in detail:
+
+
+2.1 Singly-linked list
+A singly-linked list is a linked list that stores data and the reference to the next node or a null value. Singly-linked lists are also known as one-way lists as they contain a node with a single pointer pointing to the next node in the sequence.
+
+There is a START pointer that stores the very first address of the linked list. The next pointer of the last or end node stores NULL value, which points to the last node of the list which does not point to any other node.
+
+Singly Linked List Data Structure in Java
+
+2.2 Doubly-linked list
+
+It is the same as a singly-linked list with the difference that it has two pointers, one pointing to the previous node and one pointing to the next node in the sequence. Therefore, a doubly-linked list allows us to traverse in both the directions of the list.
+
+Doubly Linked List Data Structure in Java
+
+2.3 Circular Linked List
+In the Circular Linked List, all the nodes align to form a circle. In this linked list, there is no NULL node at the end. We can define any node as the first node. Circular linked lists are useful in implementing a circular queue.
+
+Circular Linked List Data Structure in Java
+
+In the figure below we can see that the end node is again connected to the start node.
+
+Time complexities for linked-list operations:
+
+Traversing elements: O(n)
+Searching an element: O(n)
+Insertion: O(1)
+Deletion: O(1)
+We can also perform more operations like:
+
+Concatenating two lists
+Splitting list
+Reversal of list
+3. Stack
+A stack is a LIFO (Last In First Out) data structure that can be physically implemented as an array or as a linked list. Insertion and deletion of elements in a stack occur at the top end only. An insertion in a stack is called pushing and deletion from a stack is called popping.
+
+When we implement a stack as an array, it inherits all the properties of an array and if we implement it as a linked list, it acquires all the properties of a linked list.
+
+Stack data structure in Java
+
+
+Common operations on a stack are:
+
+Push(): Adds an item to the top of the stack.
+Pop(): Removes the item from the top of the stack
+Peek(): It tells us what is on the top of the stack without removing it. Sometimes, we can also call it top().
+Stacks are useful in:
+
+Parenthesis matching
+Solving the maze problem
+Nested Function calls
+4. Queue
+
+Logically, a queue is a FIFO (First In First Out) data structure and we can physically implement it either as an array or a linked list. Whatever way we use to implement a queue, insertions always take place at the “rear” end and deletions always from the “front” end of the queue.
+
+Data Structure in Java Queue First in First Out
+
+Common operations on a queue are:
+
+Enqueue(): Adding elements at the rear end of the queue.
+Dequeue(): Deleting elements from the front end of the queue.
+Queue Data Structure in Java
+
+Variations in Queue:
+
+
+Depending on the requirements of the program, we can use the queues in several forms and ways. Two popular variations of queues are Circular queues and Dequeues (Double-ended queues).
+
+4.1 Circular Queues
+Circular Queues are the queues implemented in circle form rather than a straight manner. Circular queues overcome the problem of unutilized space in the linear queues that we implement as arrays.
+
+Circular Queue Data Structure in Java
+
+4.2 Dequeues
+A double-ended queue or a dequeue is a refined queue in which can add or remove the elements at either end but not in the middle.
+
+Dequeue in Java
+
+Applications of a Queue:
+
+Queues are useful in telephone inquiries, reservation requests, traffic flow, etc. While using telephone directory service, you might have sometimes heard “Please wait, You are in A QUEUE”.
+To access some resources like printers queues, disk queues, etc.
+For breadth-first searching in special data structures like graphs and trees.
+For handling scheduling of processes in a multitasking operating system example FCFS (First Come First Serve) scheduling, Round-Robin scheduling, etc.
+5. Graph
+A graph is a non-linear data structure in Java and the following two components define it:
+
+A set of a finite number of vertices which we call as nodes.
+An edge with a finite set of ordered pairs which is in the form (u, v).
+V represents the Number of Vertices.
+N represents the Number of Edges.
+Classification of a Graph
+
+
+Graph Data Structures in Java can be classified on the basis of two parameters: direction and weight.
+
+5.1 Direction
+On the basis of direction, the graph can be classified as a directed graph and an undirected graph.
+
+A. Directed graph 
+
+A directed graph is a set of nodes or vertices connect together with each other and all the edges have a direction from one vertex to another. There is a directed edge for each connection of vertices. The figure below shows a directed graph:
+
+Directed Graph in Java
+
+B. Undirected graph 
+
+An undirected graph is a set of nodes or vertices which are connected together, with no direction. The figure below shows an undirected graph:
+
+Undirected Graph in Java
+
+5.2 Weight
+
+On the basis of weight, the graph can be classified as a weighted graph and an unweighted graph.
+
+A. Weighted graph 
+
+A weighted graph is a graph in which the weight is present at every edge of the graph. A weighted graph is also a special type of labeled graph. The figure below shows a weighted graph:
+
+Java Weighted Graph
+
+B. Unweighted graph
+
+An unweighted graph is the one in which there is no weight present on any edge. The figure below shows an unweighted graph:
+
+Java Unweighted Graph
+
+6. Set
+
+A Set is a special data structure in which we can not use the duplicate values. It is a very useful data structure mainly when we want to store unique elements, for example, unique IDs.
+
+There are many implementations of Set like HashSet, TreeSet, and LinkedHashSet provided by Java Collection API.
+
+Set Data Structure in Java
+
+Summary
+Data structures are useful in storing and organizing the data in an efficient manner.
+
+In the above article, we discussed some important Java Data Structures like arrays, linked lists, stacks, queues, graphs and, Set with their types, implementation, and examples. This article will surely help you in your future Java Programming.
+
+Thank you for reading our article. If you have any queries related to Data Structures in Java, do let us know by dropping a comment below.
